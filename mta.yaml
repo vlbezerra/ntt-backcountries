@@ -1,0 +1,74 @@
+---
+_schema-version: '3.1'
+ID: back-countries
+version: 1.1.0
+description: "A simple CAP project."
+
+modules:
+################# BACK MODULE ########################
+  - name: back-countries-srv
+    type: nodejs
+    path: gen/srv
+    build-parameters:
+      ignore: [ "default-env.json", "node_modules" ]
+    parameters:
+      buildpack: nodejs_buildpack
+      command: node srv/server.js
+      disk-quota: 512m
+      memory: 256M
+    provides:
+      - name: srv-api
+        properties:
+          srv-url: ${default-url}
+    requires:
+      - name: back-countries-db
+      - name: back-countries-auth
+      - name: destinations-countries
+
+  # -------------------- DB DEPLOYER ---------------------------
+  - name: countries-db-deployer
+  # ------------------------------------------------------------
+    type: hdb
+    path: gen/db  
+    parameters:
+      buildpack: nodejs_buildpack
+    requires:
+    - name: back-countries-db
+#############################################################      
+resources: 
+#############################################################
+  - name: back-countries-db
+    type: com.sap.xs.hdi-container
+    parameters:
+      service: hana
+      service-plan: hdi-shared
+#############################################################
+  - name: back-countries-auth
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service: xsuaa
+      service-plan: application
+      path: ./xs-security.json
+#############################################################
+  - name: destinations-countries
+    type: org.cloudfoundry.managed-service
+    requires:
+    - name: srv-api
+    parameters:
+      config:
+        HTML5Runtime_enabled: true
+        init_data:
+          instance:
+            destinations:
+            - Authentication: NoAuthentication
+              Name: backend-countries
+              ProxyType: Internet
+              Description: 'Back End Countries'
+              Type: HTTP
+              URL: ~{srv-api/srv-url}
+              HTML5.DynamicDestination: true
+              ForwardAuthToken: true
+            existing_destinations_policy: update
+        version: 1.0.0
+      service: destination
+      service-plan: lite

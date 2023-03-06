@@ -1,0 +1,6 @@
+gen/
+sqlite.db
+coverage
+*.lcov
+node_modules/
+mta_arquives/

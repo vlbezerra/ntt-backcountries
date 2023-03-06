@@ -1,0 +1,103 @@
+{
+    "VCAP_SERVICES": {
+     "destination": [
+      {
+       "binding_guid": "68e500fb-2274-4528-8ee4-9a31567070eb",
+       "binding_name": null,
+       "credentials": {
+        "clientid": "sb-clone6ed8927c88f442508403cdb335977794!b139579|destination-xsappname!b62",
+        "clientsecret": "68e500fb-2274-4528-8ee4-9a31567070eb$4XNdT-GEiTk_izINJkXAORZ-5wOKh64aHevXbkodxS0=",
+        "credential-type": "binding-secret",
+        "identityzone": "challengeaws-yhl1rjcm",
+        "instanceid": "6ed8927c-88f4-4250-8403-cdb335977794",
+        "tenantid": "a0cdd1df-d166-4864-9670-918c95f56bc9",
+        "tenantmode": "dedicated",
+        "uaadomain": "authentication.us10.hana.ondemand.com",
+        "uri": "https://destination-configuration.cfapps.us10.hana.ondemand.com",
+        "url": "https://challengeaws-yhl1rjcm.authentication.us10.hana.ondemand.com",
+        "verificationkey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuEE/T+1udxIG9i9jlm2f\nGSrWXFvnN4HvOQx6szDZPCoIOUnYSl/99gOIzF5A4LYSAxvuOtudy+tW1HGvdRf8\nQPNFbM1iPSXtMD5zzyXbRu8OEp/CE4E+D6E5/Caq0Xp/UNh3l/iGj791yh55NE0F\nllFM8BO8BtfsfC/GtSjHZo0PaxOK/4BI7IhnuLnkJ3k1U0FZYXQlYdgWAIIpGK3o\nnTqDr39FIXNm7rfNK4pp6iGLzcliGp4mKDsps+MD8zvvCwxMaw4OdzBp/kuRckcE\nepv+3QQy0wR2HM6Q5wPjGoyA9T6AIiFn+lESCehZvUTlPQHO9/xVqPM6vdXSordT\nQQIDAQAB\n-----END PUBLIC KEY-----",
+        "xsappname": "clone6ed8927c88f442508403cdb335977794!b139579|destination-xsappname!b62"
+       },
+       "instance_guid": "6ed8927c-88f4-4250-8403-cdb335977794",
+       "instance_name": "destinations-countries",
+       "label": "destination",
+       "name": "destinations-countries",
+       "plan": "lite",
+       "provider": null,
+       "syslog_drain_url": null,
+       "tags": [
+        "destination",
+        "conn",
+        "connsvc"
+       ],
+       "volume_mounts": []
+      }
+     ],
+     "hana": [
+      {
+       "binding_guid": "e1840547-e1da-4956-96ea-4f154eaf596f",
+       "binding_name": null,
+       "credentials": {
+        "certificate": "-----BEGIN CERTIFICATE-----\nMIIDrzCCApegAwIBAgIQCDvgVpBCRrGhdWrJWZHHSjANBgkqhkiG9w0BAQUFADBh\nMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3\nd3cuZGlnaWNlcnQuY29tMSAwHgYDVQQDExdEaWdpQ2VydCBHbG9iYWwgUm9vdCBD\nQTAeFw0wNjExMTAwMDAwMDBaFw0zMTExMTAwMDAwMDBaMGExCzAJBgNVBAYTAlVT\nMRUwEwYDVQQKEwxEaWdpQ2VydCBJbmMxGTAXBgNVBAsTEHd3dy5kaWdpY2VydC5j\nb20xIDAeBgNVBAMTF0RpZ2lDZXJ0IEdsb2JhbCBSb290IENBMIIBIjANBgkqhkiG\n9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4jvhEXLeqKTTo1eqUKKPC3eQyaKl7hLOllsB\nCSDMAZOnTjC3U/dDxGkAV53ijSLdhwZAAIEJzs4bg7/fzTtxRuLWZscFs3YnFo97\nnh6Vfe63SKMI2tavegw5BmV/Sl0fvBf4q77uKNd0f3p4mVmFaG5cIzJLv07A6Fpt\n43C/dxC//AH2hdmoRBBYMql1GNXRor5H4idq9Joz+EkIYIvUX7Q6hL+hqkpMfT7P\nT19sdl6gSzeRntwi5m3OFBqOasv+zbMUZBfHWymeMr/y7vrTC0LUq7dBMtoM1O/4\ngdW7jVg/tRvoSSiicNoxBN33shbyTApOB6jtSj1etX+jkMOvJwIDAQABo2MwYTAO\nBgNVHQ8BAf8EBAMCAYYwDwYDVR0TAQH/BAUwAwEB/zAdBgNVHQ4EFgQUA95QNVbR\nTLtm8KPiGxvDl7I90VUwHwYDVR0jBBgwFoAUA95QNVbRTLtm8KPiGxvDl7I90VUw\nDQYJKoZIhvcNAQEFBQADggEBAMucN6pIExIK+t1EnE9SsPTfrgT1eXkIoyQY/Esr\nhMAtudXH/vTBH1jLuG2cenTnmCmrEbXjcKChzUyImZOMkXDiqw8cvpOp/2PV5Adg\n06O/nVsJ8dWO41P0jmP6P6fbtGbfYmbW0W5BjfIttep3Sp+dWOIrWcBAI+0tKIJF\nPnlUkiaY4IBIqDfv8NZ5YBberOgOzW6sRBc4L0na4UU+Krk2U886UAb3LujEV0ls\nYSEY1QSteDwsOoBrp+uvFRTp2InBuThs4pFsiv9kuXclVzDAGySj4dzp30d8tbQk\nCAUw7C29C79Fv1C5qfPrmAESrciIxpg0X40KPMbp1ZWVbd4=\n-----END CERTIFICATE-----",
+        "database_id": "7cd7cff6-5a18-4fde-b0c7-6ad751e73e11",
+        "driver": "com.sap.db.jdbc.Driver",
+        "hdi_password": "Lh7WQaZ3HNwuK3bCL2.DKxCIG1pXBVQAkCXpiO9qQ.3FakaF3cQO._u684BG5ag1uILWQGDiinoE7GNkssDPvOl0ak0yTVdThodv83OG5GsihZgmZNSt1MmVGuD_qbwO",
+        "hdi_user": "1B9954269ED54F27A9A6F3E1DCD06556_CXX98VMUO62DTEJ3YELM9WWLO_DT",
+        "host": "7cd7cff6-5a18-4fde-b0c7-6ad751e73e11.hana.trial-us10.hanacloud.ondemand.com",
+        "password": "Tf6GNTQ1xwIO2pTw2HJgXmyzQ-rebnOJQx3sIMC.XfTndFuNzdibKjnsasYK7zSqskAniAO8vzVhMz1MMY6sOKqzJzcSw.WnDEHzvgYj79Phcel-WBtfGJ7-6ZoPNLxf",
+        "port": "443",
+        "schema": "1B9954269ED54F27A9A6F3E1DCD06556",
+        "url": "jdbc:sap://7cd7cff6-5a18-4fde-b0c7-6ad751e73e11.hana.trial-us10.hanacloud.ondemand.com:443?encrypt=true\u0026validateCertificate=true\u0026currentschema=1B9954269ED54F27A9A6F3E1DCD06556",
+        "user": "1B9954269ED54F27A9A6F3E1DCD06556_CXX98VMUO62DTEJ3YELM9WWLO_RT"
+       },
+       "instance_guid": "1cd880f9-08e5-4945-8c54-0afcb7595a17",
+       "instance_name": "back-countries-db",
+       "label": "hana",
+       "name": "back-countries-db",
+       "plan": "hdi-shared",
+       "provider": null,
+       "syslog_drain_url": null,
+       "tags": [
+        "hana",
+        "database",
+        "relational"
+       ],
+       "volume_mounts": []
+      }
+     ],
+     "xsuaa": [
+      {
+       "binding_guid": "58876612-e803-4f70-a03d-62545137d144",
+       "binding_name": null,
+       "credentials": {
+        "apiurl": "https://api.authentication.us10.hana.ondemand.com",
+        "clientid": "sb-back-countries!t139579",
+        "clientsecret": "iRliI18Xw55OgoDdX93fp7hBhsQ=",
+        "credential-type": "instance-secret",
+        "identityzone": "challengeaws-yhl1rjcm",
+        "identityzoneid": "a0cdd1df-d166-4864-9670-918c95f56bc9",
+        "sburl": "https://internal-xsuaa.authentication.us10.hana.ondemand.com",
+        "subaccountid": "a0cdd1df-d166-4864-9670-918c95f56bc9",
+        "tenantid": "a0cdd1df-d166-4864-9670-918c95f56bc9",
+        "tenantmode": "dedicated",
+        "uaadomain": "authentication.us10.hana.ondemand.com",
+        "url": "https://challengeaws-yhl1rjcm.authentication.us10.hana.ondemand.com",
+        "verificationkey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuEE/T+1udxIG9i9jlm2f\nGSrWXFvnN4HvOQx6szDZPCoIOUnYSl/99gOIzF5A4LYSAxvuOtudy+tW1HGvdRf8\nQPNFbM1iPSXtMD5zzyXbRu8OEp/CE4E+D6E5/Caq0Xp/UNh3l/iGj791yh55NE0F\nllFM8BO8BtfsfC/GtSjHZo0PaxOK/4BI7IhnuLnkJ3k1U0FZYXQlYdgWAIIpGK3o\nnTqDr39FIXNm7rfNK4pp6iGLzcliGp4mKDsps+MD8zvvCwxMaw4OdzBp/kuRckcE\nepv+3QQy0wR2HM6Q5wPjGoyA9T6AIiFn+lESCehZvUTlPQHO9/xVqPM6vdXSordT\nQQIDAQAB\n-----END PUBLIC KEY-----",
+        "xsappname": "back-countries!t139579",
+        "zoneid": "a0cdd1df-d166-4864-9670-918c95f56bc9"
+       },
+       "instance_guid": "cb1f8643-fd7c-41dc-ba3e-f45b22f3b41f",
+       "instance_name": "back-countries-auth",
+       "label": "xsuaa",
+       "name": "back-countries-auth",
+       "plan": "application",
+       "provider": null,
+       "syslog_drain_url": null,
+       "tags": [
+        "xsuaa"
+       ],
+       "volume_mounts": []
+      }
+     ]
+    }
+   }

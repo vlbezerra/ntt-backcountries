@@ -1,0 +1,36 @@
+{
+    "VCAP_SERVICES": {
+        "hana": [
+            {
+                "binding_guid": "c232e00e-8e77-4ad4-a41e-c3b76edd6b23",
+                "binding_name": null,
+                "credentials": {
+                    "certificate": "-----BEGIN CERTIFICATE-----\nMIIDrzCCApegAwIBAgIQCDvgVpBCRrGhdWrJWZHHSjANBgkqhkiG9w0BAQUFADBh\nMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3\nd3cuZGlnaWNlcnQuY29tMSAwHgYDVQQDExdEaWdpQ2VydCBHbG9iYWwgUm9vdCBD\nQTAeFw0wNjExMTAwMDAwMDBaFw0zMTExMTAwMDAwMDBaMGExCzAJBgNVBAYTAlVT\nMRUwEwYDVQQKEwxEaWdpQ2VydCBJbmMxGTAXBgNVBAsTEHd3dy5kaWdpY2VydC5j\nb20xIDAeBgNVBAMTF0RpZ2lDZXJ0IEdsb2JhbCBSb290IENBMIIBIjANBgkqhkiG\n9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4jvhEXLeqKTTo1eqUKKPC3eQyaKl7hLOllsB\nCSDMAZOnTjC3U/dDxGkAV53ijSLdhwZAAIEJzs4bg7/fzTtxRuLWZscFs3YnFo97\nnh6Vfe63SKMI2tavegw5BmV/Sl0fvBf4q77uKNd0f3p4mVmFaG5cIzJLv07A6Fpt\n43C/dxC//AH2hdmoRBBYMql1GNXRor5H4idq9Joz+EkIYIvUX7Q6hL+hqkpMfT7P\nT19sdl6gSzeRntwi5m3OFBqOasv+zbMUZBfHWymeMr/y7vrTC0LUq7dBMtoM1O/4\ngdW7jVg/tRvoSSiicNoxBN33shbyTApOB6jtSj1etX+jkMOvJwIDAQABo2MwYTAO\nBgNVHQ8BAf8EBAMCAYYwDwYDVR0TAQH/BAUwAwEB/zAdBgNVHQ4EFgQUA95QNVbR\nTLtm8KPiGxvDl7I90VUwHwYDVR0jBBgwFoAUA95QNVbRTLtm8KPiGxvDl7I90VUw\nDQYJKoZIhvcNAQEFBQADggEBAMucN6pIExIK+t1EnE9SsPTfrgT1eXkIoyQY/Esr\nhMAtudXH/vTBH1jLuG2cenTnmCmrEbXjcKChzUyImZOMkXDiqw8cvpOp/2PV5Adg\n06O/nVsJ8dWO41P0jmP6P6fbtGbfYmbW0W5BjfIttep3Sp+dWOIrWcBAI+0tKIJF\nPnlUkiaY4IBIqDfv8NZ5YBberOgOzW6sRBc4L0na4UU+Krk2U886UAb3LujEV0ls\nYSEY1QSteDwsOoBrp+uvFRTp2InBuThs4pFsiv9kuXclVzDAGySj4dzp30d8tbQk\nCAUw7C29C79Fv1C5qfPrmAESrciIxpg0X40KPMbp1ZWVbd4=\n-----END CERTIFICATE-----",
+                    "database_id": "8a059cbe-f332-412c-9802-5b38903885b2",
+                    "driver": "com.sap.db.jdbc.Driver",
+                    "hdi_password": "Lf0-ILgJIOLwC2CvajzJOTqTdd-34BcZ9Vwg3QHCJvKwbJdUueQS0bARA2JLftIsr7GxguHirLy3nJRLaGQmgOda2S-q_a9IEt-MnmgmuPAiDULSrV-gRR3L7JajxgbD",
+                    "hdi_user": "6110F7DF3F26438080A0CE7E14DD62AF_5VBSTAXRURXM3P8YWPKE2NN5L_DT",
+                    "host": "8a059cbe-f332-412c-9802-5b38903885b2.hana.trial-us10.hanacloud.ondemand.com",
+                    "password": "La6vPetpiE4fJavXYsCv-c94DSLPiATRf-BbbNw9zkD8q5cwRhIb_OjT8C90Rhin2.7HJ917xSNn59W1qjKRB6_DlSB53Y9c40IRDeStKljXk7Smly.B.OyH5adXPwU3",
+                    "port": "443",
+                    "schema": "6110F7DF3F26438080A0CE7E14DD62AF",
+                    "url": "jdbc:sap://8a059cbe-f332-412c-9802-5b38903885b2.hana.trial-us10.hanacloud.ondemand.com:443?encrypt=true\u0026validateCertificate=true\u0026currentschema=6110F7DF3F26438080A0CE7E14DD62AF",
+                    "user": "6110F7DF3F26438080A0CE7E14DD62AF_5VBSTAXRURXM3P8YWPKE2NN5L_RT"
+                },
+                "instance_guid": "4c8f4662-42bb-4377-add9-f3df8560270a",
+                "instance_name": "back-countries-db",
+                "label": "hana",
+                "name": "back-countries-db",
+                "plan": "hdi-shared",
+                "provider": null,
+                "syslog_drain_url": null,
+                "tags": [
+                    "hana",
+                    "database",
+                    "relational"
+                ],
+                "volume_mounts": []
+            }
+        ]
+    }
+}
