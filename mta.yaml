@@ -68,6 +68,12 @@ resources:
               URL: ~{srv-api/srv-url}
               HTML5.DynamicDestination: true
               ForwardAuthToken: true
+            - Authentication: NoAuthentication
+              Name: countries-destination
+              ProxyType: Internet
+              Description: 'External Service Countries'
+              Type: HTTP
+              URL: https://restcountries.com/v2/lang/  
             existing_destinations_policy: update
         version: 1.0.0
       service: destination
